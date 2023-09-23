@@ -364,6 +364,7 @@ footer div {
     font-size: 2rem;
     display: grid;
     color: black;
+    text-align: right;
 }
 
 .Redes {
