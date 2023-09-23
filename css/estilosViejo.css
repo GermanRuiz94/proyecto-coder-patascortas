@@ -1,0 +1,286 @@
+* {
+    padding: 0px;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #a9c7aa;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(54, 99, 54);
+}
+
+img {
+    width: 100%;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.Menu {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin-left: 1060px;
+}
+
+    
+/* HEADER */ /* INICIO*/ 
+.PatasLogo-one {
+     width: 12rem;
+}
+
+ul li {
+    
+
+}
+
+.MenuLink {
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-bottom: 2px solid green;
+    transition: all 0.5s ease;
+}
+
+.MenuLink: :hover {
+    border-color: : green;
+}
+
+
+/* BODY*/  /* INICIO*/ 
+
+.main {
+    max-width: 1200px; 
+    margin: 2rem auto;   
+}
+
+.Ofertas-Descuentos1 {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    margin-left: 40px;
+}
+
+
+.Local1 {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    margin-left: 450px;
+    
+}
+
+.Categorias-Titulo {
+    text-align: center;
+    
+}
+
+.Nenas-Titulo {
+    text-align: center;
+    
+}
+
+.Nenes-Titulo {
+    text-align: center;
+    
+}
+
+.Bebes-Titulo {
+    text-align: center;
+    
+}
+
+
+.Articulos-uno-nenas {
+    
+
+}
+
+
+
+.Articulos-dos-nenes {
+    
+    
+}    
+
+
+.Articulos-tres-bebes {
+    
+    
+}
+
+.Seccion {
+    display: flex;
+}
+
+
+/* INDUMENTARIA NENAS */
+
+.Indumentaria-nenas1 {
+    
+}
+
+
+
+
+.Articulos-uno-nenas {
+    
+}
+
+.Articulos-dos-nenas {
+    
+}
+
+.Articulos-tres-nenas {
+    
+}
+
+.Articulos-cuatro-nenas {
+    
+}
+
+.Articulos-cinco-nenas {
+    
+}
+
+.Articulos-seis-nenas {
+    
+}
+
+/* INDUMENTARIA NENES */
+
+.Articulos-uno-nenes {
+    
+}
+
+.Articulos-dos-nenes {
+    
+}
+
+.Articulos-tres-nenes {
+    
+}
+
+.Articulos-cuatro-nenes {
+    
+}
+
+.Articulos-cinco-nenes {
+    
+}
+
+.Articulos-seis-nenes {
+    
+}
+
+/* INDUMENTARIA BEBES */
+
+.Articulos-uno-bebes {
+    
+}
+
+.Articulos-dos-bebes {
+    
+}
+
+.Articulos-tres-bebes {
+    
+}
+
+.Articulos-cuatro-bebes {
+    
+}
+
+.Articulos-cinco-bebes {
+    
+}
+
+.Articulos-seis-bebes {
+    
+}
+
+
+/* ACCESORIOS */
+
+.Accesorios-Titulo {
+    text-align: center;
+}
+
+.Articulos-uno-accesorios {
+    
+}
+
+.Articulos-dos-accesorios {
+    
+}
+
+.Articulos-tres-accesorios {
+    
+}
+
+.Articulos-cuatro-accesorios {
+    
+}
+
+.Articulos-cinco-accesorios {
+    
+}
+
+.Articulos-seis-accesorios {
+    
+}
+
+/* ULTIMOS TALLES */
+
+.UltimosTalles-Titulo {
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+.Footer {
+    background-color: rgb(153, 175, 153);
+    width: 100%;
+}   
+
+.Mapa {
+    width: 30%;
+}
+
+.Facebook {
+    width: 5%;
+    height: 5%;
+}
+
+.Instagram {
+    width: 5%;
+    height: 5%;
+}
+
+.Whatsapp {
+    width: 5%;
+    height: 5%;
+}
+
+
+.LogoPatas-footer {
+    
+}
+
