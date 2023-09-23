@@ -96,10 +96,6 @@ li a.active, li a:hover {
     flex-wrap: wrap;
 }
 
-.menu-white {
-    background-color: green;
-}
-
 .Menulink {
     font-size: 3rem;
     font-family: 'Roboto', sans-serif;
