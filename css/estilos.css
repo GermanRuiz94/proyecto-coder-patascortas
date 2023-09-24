@@ -8,10 +8,6 @@ html {
     font-size: 62.5%;
 }
 
-/*body {
-    background-color: #7aa17b;
-} */
-
 body {
     margin: 0;
     font-family: var(--bs-body-font-family);
@@ -97,32 +93,11 @@ li a.active, li a:hover {
     display: none;
 }
 
-/*section {
-    background: url() no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh)
-    ;
-} */
-
-
-/* .encabezado {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}  } */
-
 .Menu {
     display: flex;
     justify-content: center;
     gap: 5rem;
     flex-wrap: wrap;
-}
-
-.menu-white {
-    background-color: green;
 }
 
 .Menulink {
@@ -159,8 +134,6 @@ main {
     width: 100%;
     display: flex;
 }
-
-
 
 /* BODY*/  /* INICIO*/ 
 
@@ -210,17 +183,6 @@ main {
     flex-wrap: wrap;
     padding: 0 1rem;
 }
-
- /*.Seccion2 {
-    display: flex;
-    /* justify-content: center; 
-     gap: 1.5rem;
-     max-width: 1500px;
-     margin: 0 auto;
-     padding: 3rem;
-     flex-wrap: wrap; 
-
-}  */
 
 .Articulo {
     display: flex;
@@ -454,18 +416,7 @@ footer div {
         padding: 0 1rem;
     }
 
-     /*.Seccion2 {
-        display: flex;
-        /* justify-content: center; 
-         gap: 1.5rem;
-         max-width: 1500px;
-         margin: 0 auto;
-         padding: 3rem;
-         flex-wrap: wrap; 
-    
-    } */
-
-    footer div {
+footer div {
         justify-content: space-around;
         width: 100%;
         display: grid;
