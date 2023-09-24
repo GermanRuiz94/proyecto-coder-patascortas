@@ -21,10 +21,6 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.carrousel {
-    width: 100%;
-
-}
 ul {
     list-style-type: none;
 }
@@ -38,6 +34,11 @@ a {
 img {
     width: 100%;
     display: flex;
+}
+
+.Oferta {
+    width: 90%;
+    
 }
 
 nav {
