@@ -36,11 +36,6 @@ img {
     display: flex;
 }
 
-.Oferta {
-    width: 90%;
-    
-}
-
 nav {
     background-color: aquamarine;
     height: 85px;
@@ -382,7 +377,7 @@ footer div {
     
 
     .carousel {
-        display: none;
+        display: flex;
     } 
 
     .Articulo {
