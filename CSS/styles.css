@@ -239,17 +239,17 @@ main {
 
 .parrafo-nenas1:hover {
     background-color: pink;
-    transition: .5s;
+    transition: .3s;
 }
 
 .parrafo-nenes2:hover {
     background-color: cornflowerblue;
-    transition: .5s;
+    transition: .3s;
 }
 
 .parrafo-bebes3:hover {
     background-color: aliceblue;
-    transition: .5s;
+    transition: .3s;
 }
 
 /* VERANO */
@@ -600,6 +600,11 @@ footer div {
 
     .container {
         font-size: 18px;
+    }
+
+    .carousel {
+        width: 100%;
+        z-index: -999px;
     }
 
     
