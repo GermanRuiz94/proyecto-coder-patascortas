@@ -117,6 +117,11 @@ li a.active, li a:hover {
 
 
 /* HEADER */ /* INICIO*/ 
+.carousel {
+    width: 100%;
+    z-index: -999px;
+}
+
 .PatasLogo-one {
      width: 12rem;
 }
@@ -197,9 +202,6 @@ main {
     flex-grow: 1;
     flex-shrink: 1 ;
     flex-basis: clamp(300px, 30%, 400px) ;
-    
-    
-    ;
 }
 
 .Parrafo {
@@ -233,6 +235,21 @@ main {
 .Parrafo-Accesorios {
     font-size: 2rem;
     color: black;
+}
+
+.parrafo-nenas1:hover {
+    background-color: pink;
+    transition: .5s;
+}
+
+.parrafo-nenes2:hover {
+    background-color: cornflowerblue;
+    transition: .5s;
+}
+
+.parrafo-bebes3:hover {
+    background-color: aliceblue;
+    transition: .5s;
 }
 
 /* VERANO */
@@ -390,12 +407,6 @@ footer div {
     nav ul li a {
         font-size: 16px;
     }
-
-    
-
-    /*.carousel {
-        display: flex;
-    } */
 
     .Articulo {
         display: flex;
