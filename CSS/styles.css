@@ -34,6 +34,7 @@ a {
 img {
     width: 100%;
     display: flex;
+    
 }
 
 .Patas {
@@ -75,9 +76,9 @@ nav ul li a {
 }
 
 li a.active, li a:hover {
-    background: #00aaa3;
+    background: #039388;
     transition: .5s;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 .checkbtn {
@@ -155,6 +156,7 @@ main {
     margin-top: 3rem;
     font-size: 5rem;
     color: black;
+    text-decoration: overline;
     
 }
 
@@ -163,6 +165,7 @@ main {
     margin-top: 3rem;
     font-size: 5rem;
     color: black;
+    text-decoration: overline;
     
 }
 
@@ -171,6 +174,7 @@ main {
     margin-top: 3rem;
     font-size: 5rem;
     color: black;
+    text-decoration: overline;
     
 }
 
@@ -193,6 +197,9 @@ main {
     flex-grow: 1;
     flex-shrink: 1 ;
     flex-basis: clamp(300px, 30%, 400px) ;
+    
+    
+    ;
 }
 
 .Parrafo {
