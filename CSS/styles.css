@@ -119,7 +119,6 @@ li a.active, li a:hover {
 /* HEADER */ /* INICIO*/ 
 .carousel {
     width: 100%;
-    z-index: -999px;
 }
 
 .PatasLogo-one {
@@ -507,6 +506,7 @@ footer div {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1;
     }
 
     nav ul li {
@@ -602,12 +602,5 @@ footer div {
         font-size: 18px;
     }
 
-    .carousel {
-        width: 100%;
-        z-index: -999px;
-    }
-
-    
-    
 }
 
