@@ -1,0 +1,532 @@
+* {
+  padding: 0px;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: #039388;
+  text-align: var(--bs-body-text-align);
+  background-color: #00aaa3;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+.Patas {
+  margin-top: -4px;
+}
+
+nav {
+  background-color: #038e83;
+  height: 85px;
+  width: 100%;
+}
+
+.enlace {
+  position: absolute;
+  padding: 10px 60px;
+}
+
+.logo {
+  width: 70px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 85px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+li a.active, li a:hover {
+  background: #039388;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 85px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.Menu {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.Menulink {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  transition: all 0.5s ease;
+}
+
+.menu-link:hover {
+  border-color: gray;
+}
+
+/* HEADER */ /* INICIO*/
+.carousel {
+  width: 100%;
+}
+
+.PatasLogo-one {
+  width: 12rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.navbar {
+  background-color: #7aa17b;
+}
+
+.Local1 {
+  width: 100%;
+  display: flex;
+}
+
+/* BODY*/ /* INICIO*/
+.main {
+  max-width: 1200px;
+  /* margin: 2rem auto; */
+}
+
+.Categorias-Titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: black;
+}
+
+.Nenas-Titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: black;
+  text-decoration: overline;
+}
+
+.Nenes-Titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: black;
+  text-decoration: overline;
+}
+
+.Bebes-Titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: black;
+  text-decoration: overline;
+}
+
+.Seccion {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.Articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: clamp(300px, 30%, 400px);
+}
+
+.Parrafo {
+  font-size: 1.5rem;
+  color: black;
+  background-color: #039388;
+  padding: 8px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.Parrafo-Nenas {
+  font-size: 2rem;
+  color: black;
+}
+
+.Parrafo-Nenes {
+  font-size: 2rem;
+  color: black;
+}
+
+.Parrafo-Bebes {
+  font-size: 2rem;
+  color: black;
+}
+
+.Parrafo-Accesorios {
+  font-size: 2rem;
+  color: black;
+}
+
+.parrafo-nenas1:hover {
+  background-color: pink;
+  transition: 0.3s;
+}
+
+.parrafo-nenes2:hover {
+  background-color: cornflowerblue;
+  transition: 0.3s;
+}
+
+.parrafo-bebes3:hover {
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+
+/* VERANO */
+.Verano-Titulo {
+  text-align: center;
+  font-size: 5rem;
+  color: black;
+}
+
+/* INDUMENTARIA NENAS */
+/* INDUMENTARIA NENES */
+/* INDUMENTARIA BEBES */
+/* NOSOTROS */
+.Nosotros-Titulo {
+  text-align: center;
+  font-size: 5rem;
+  color: black;
+  margin-top: 20px;
+}
+
+.Info-Nosotros {
+  font-size: 3rem;
+  flex-wrap: wrap;
+  margin: 4px;
+  padding: 5px;
+  color: black;
+}
+
+.container {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+/* ACCESORIOS */
+.Accesorios-Titulo {
+  text-align: center;
+  font-size: 5rem;
+  color: black;
+  margin-top: 20px;
+}
+
+/* ULTIMOS TALLES */
+.UltimosTalles-Titulo {
+  text-align: center;
+  font-size: 5rem;
+  color: black;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+.Footer {
+  background-color: #038e83;
+  margin-top: 2rem;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+footer div {
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.Parrafo-Footer {
+  font-size: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  border-top: 2px solid black;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.Horarios {
+  font-size: 2rem;
+  display: grid;
+  color: black;
+}
+
+.Ubicacion {
+  font-size: 2rem;
+  display: grid;
+  color: black;
+  text-align: right;
+  padding: 10px;
+}
+
+.Redes {
+  display: flex;
+}
+
+.Redes1 {
+  display: none;
+}
+
+.Facebook {
+  width: 4rem;
+}
+
+.Instagram {
+  width: 4rem;
+}
+
+.Whatsapp {
+  width: 4rem;
+}
+
+.LogoPatas-footer {
+  width: 4rem;
+}
+
+/* ESCRITORIO */
+@media (max-width: 2200px) {
+  .Articulos-ultimostalles {
+    display: none;
+  }
+}
+/* TABLET */
+@media (max-width: 1120px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .Articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: clamp(300px, 30%, 400px);
+  }
+  .Seccion {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .Seccion-Inicio {
+    display: flow-root;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  footer div {
+    justify-content: space-around;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .Redes {
+    display: none;
+  }
+  .Redes1 {
+    display: flex;
+  }
+  .Horarios {
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+  }
+  .Mapa {
+    display: flex;
+    margin-left: auto;
+  }
+  .Ubicacion {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Info-Nosotros {
+    font-size: 3rem;
+    flex-wrap: wrap;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+  }
+  .container {
+    font-size: 20px;
+    display: flex;
+  }
+}
+/* MOBILE */
+@media (max-width: 815px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #038e83;
+    top: 85px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  li a:hover, li a.active {
+    background: none;
+    color: red;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  footer div {
+    justify-content: space-around;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  .Articulos-ultimostalles {
+    display: none;
+  }
+  .Link-ultimostalles {
+    display: flex;
+  }
+  .Seccion {
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .Redes {
+    display: none;
+  }
+  .Redes1 {
+    display: flex;
+  }
+  .Horarios {
+    display: none;
+  }
+  .Horario {
+    display: grid;
+  }
+  .Mapa {
+    display: flex;
+  }
+  .Ubicacion {
+    display: none;
+  }
+  .Ubicaciones {
+    display: grid;
+  }
+  .Info-Nosotros {
+    font-size: 3rem;
+    flex-wrap: wrap;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+  }
+  .Mapa1 {
+    display: none;
+  }
+  .container {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

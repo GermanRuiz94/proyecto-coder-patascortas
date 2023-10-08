@@ -1,0 +1,265 @@
+* {
+    padding: 0px;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: #039388;
+    text-align: var(--bs-body-text-align);
+    background-color: #00aaa3;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.Categorias-Titulo {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 5rem;
+    color: black;
+}
+
+.Seccion {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.Articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: clamp(300px, 30%, 400px);
+}
+
+.Parrafo {
+    font-size: 1.5rem;
+    color: black;
+    background-color: #039388;
+    padding: 8px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.Parrafo-Nenas {
+    font-size: 2rem;
+    color: black;
+}
+
+.Parrafo-Nenes {
+    font-size: 2rem;
+    color: black;
+}
+
+.Parrafo-Bebes {
+    font-size: 2rem;
+    color: black;
+}
+
+.Parrafo-Accesorios {
+    font-size: 2rem;
+    color: black;
+}
+
+.parrafo-nenas1:hover {
+    background-color: pink;
+    transition: 0.3s;
+}
+
+.parrafo-nenes2:hover {
+    background-color: cornflowerblue;
+    transition: 0.3s;
+}
+
+.parrafo-bebes3:hover {
+    background-color: aliceblue;
+    transition: 0.3s;
+}
+
+header {
+    display: flex;
+    background-color: $color-principal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a.active,
+li a:hover {
+    background: #039388;
+    transition: 0.5s;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #038e83;
+    height: 85px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 85px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 85px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.Footer {
+    background-color: #038e83;
+    margin-top: 2rem;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer div {
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.Parrafo-Footer {
+    font-size: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    border-top: 2px solid black;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.Horarios {
+    font-size: 2rem;
+    display: grid;
+    color: black;
+}
+
+.Ubicacion {
+    font-size: 2rem;
+    display: grid;
+    color: black;
+    text-align: right;
+    padding: 10px;
+}
+
+.Redes {
+    display: flex;
+}
+
+.Redes1 {
+    display: none;
+}
+
+.Facebook, .Instagram, .Whatsapp {
+    width: 4rem;
+}
+
+//header {
+//    display: flex;
+//    background-color: $color-principal;
+//
+//    nav {
+//        background-color: #038e83;
+//        height: 85px;
+//        width: 100%;
+//
+//        ul {
+//            float: right;
+//            margin-right: 20px;
+//
+//            li {
+//                color: black;
+//                font-size: 15px;
+//                padding: 7px 13px;
+//                border-radius: 10px;
+//                text-transform: uppercase;
+//            }
+//        }
+//    }
+//}
+
+.encabezado {
+    @include flex-estatico;
+    background-color: $color-principal;
+
+    .Menu__list {
+        float: right;
+        margin-right: 20px;
+
+        &__item {
+            color: black;
+            font-size: 15px;
+            padding: 7px 13px;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+section {
+    @include flex (null, center, center, null);
+}
+
+img {
+    @include sizes (100%, null)
+}

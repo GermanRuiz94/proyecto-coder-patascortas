@@ -15,7 +15,7 @@
 
 <body>
     <header class="encabezado">
-        <nav>
+        <nav class="Menu">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fa-solid fa-bars"></i>
@@ -24,13 +24,14 @@
                 <img src="../images/Logo.jpg" alt="" class="logo">
             </a>
 
-            <ul>
-                <li><a class="active" href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./verano.html">Verano</a></li>
-                <li><a href="./accesorios.html">Accesorios</a></li>
-                <li><a href="./ultimosTalles.html">Ultimos Talles</a></li>
+            <ul class="Menu__list">
+                <li class="Menu__list__item"><a class="active" href="/index.html">Inicio</a></li>
+                <li class="Menu__list__item"><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="Menu__list__item"><a href="../pages/verano.html">Verano</a></li>
+                <li class="Menu__list__item"><a href="../pages/accesorios.html">Accesorios</a></li>
+                <li class="Menu__list__item"><a href="../pages/ultimosTalles.html">Ultimos Talles</a></li>
             </ul>
+        </nav>
         </nav>
         <section></section>
 
@@ -85,184 +86,6 @@
             </p>
         </article>
     </section>
-
-    <!--<section class="Seccion">
-
-        <article class="Articulo Indumentaria-nenas1">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/PATASCORTAS/remeranena.jpg" class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranena6.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranena3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p class="Parrafo-Nenas">
-                <strong>Remeras</strong>
-            </p>
-        </article>
-
-        <article class="Articulo Indumentaria-nenas2">
-            <div id="carouselExample1" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/PATASCORTAS/remera3.jpg" class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranena4.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranene.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p class="Parrafo-Nenas">
-                <strong>Vestidos</strong>
-            </p>
-        </article>
-
-        <article class="Articulo Indumentaria-nenas3">
-            <div id="carouselExample2" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/PATASCORTAS/buzobebe.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/buzonene.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/chaleconena.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p class="Parrafo-Nenas">
-                <strong>Buzos, Camperas y Chalecos</strong>
-            </p>
-        </article>
-
-        <article class="Articulo Indumentaria-nenas4">
-            <div id="carouselExample3" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/PATASCORTAS/remeranene2.jpg" class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranena6.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranene.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p class="Parrafo-Nenas">
-                <strong>Pantalones , Calzas y Shorts</strong>
-            </p>
-        </article>
-
-        <article class="Articulo Indumentaria-nenas5">
-            <div id="carouselExample4" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/PATASCORTAS/remeranena.jpg" class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranena6.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/remeranene.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p class="Parrafo-Nenas">
-                <strong>Conjuntos</strong>
-            </p>
-        </article>
-
-
-        <article class="Articulo Indumentaria-nenas6">
-            <div id="carouselExample5" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../images/PATASCORTAS/pijama.jpg" class="d-block w-100" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/pijama10.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../images/PATASCORTAS/pijama2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <p class="Parrafo-Nenas">
-                <strong>Pijamas</strong>
-            </p>
-        </article>
-    </section> -->
 
     <footer class="Footer">
         <div>
