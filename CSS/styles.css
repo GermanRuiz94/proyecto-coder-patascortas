@@ -1,49 +1,280 @@
 * {
-    padding: 0px;
-    margin: 0%;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    margin: 0;
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    color: #039388;
-    text-align: var(--bs-body-text-align);
-    background-color: #00aaa3;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: #039388;
+  text-align: var(--bs-body-text-align);
+  background-color: #00aaa3;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .carousel {
-    width: 100%;
-}
-
-.Categorias-Titulo {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 5rem;
-    color: black;
+  width: 100%;
 }
 
 .Seccion {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    max-width: 1500px;
-    margin: 0 auto;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
 .Articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: clamp(300px, 30%, 400px);
+}
+
+.Parrafo {
+  font-size: 1.5rem;
+  color: black;
+  background-color: #039388;
+  padding: 8px;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.Parrafo-Nenas, .Parrafo-Nenes, .Parrafo-Bebes, .Parrafo-Accesorios {
+  font-size: 2rem;
+  color: black;
+}
+
+.parrafo-nenas1:hover {
+  background-color: pink;
+  transition: 0.3s;
+}
+
+.parrafo-nenes2:hover {
+  background-color: cornflowerblue;
+  transition: 0.3s;
+}
+
+.parrafo-bebes3:hover {
+  background-color: aliceblue;
+  transition: 0.3s;
+}
+
+header {
+  display: flex;
+  background-color: #00aaa3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a.active, li a:hover {
+  background: #00aaa3;
+  transition: 0.5s;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: #038e83;
+  height: 85px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 85px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 85px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.Footer {
+  background-color: #038e83;
+  margin-top: 2rem;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+footer div {
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.Parrafo-Footer {
+  font-size: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  border-top: 2px solid black;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.Horarios {
+  font-size: 2rem;
+  display: grid;
+  color: black;
+}
+
+.Ubicacion {
+  font-size: 2rem;
+  display: grid;
+  color: black;
+  text-align: right;
+  padding: 10px;
+}
+
+.Redes {
+  display: flex;
+}
+
+.Redes1 {
+  display: none;
+}
+
+.Facebook, .Instagram, .Whatsapp {
+  width: 4rem;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #00aaa3;
+}
+
+.encabezado .Menu__list {
+  float: right;
+  margin-right: 20px;
+}
+
+.encabezado .Menu__list__item {
+  color: black;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+.enlace {
+  position: absolute;
+  padding: 10px 60px;
+  display: flex;
+}
+
+.logo {
+  width: 70px;
+}
+
+.Categorias-Titulo, .Nenas-Titulo, .Nenes-Titulo, .Bebes-Titulo, 
+.Accesorios-Titulo, .Verano-Titulo, .UltimosTalles-Titulo, .Nosotros-Titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: black;
+}
+
+.container {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  color: black;
+}
+
+.Main2 {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ESCRITORIO */
+@media (max-width: 2200px) {
+  .Articulos-ultimostalles {
+    display: none;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1120px) {
+  .enlace {
+    padding-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .Articulo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,403 +282,186 @@ body {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: clamp(300px, 30%, 400px);
-}
+  }
 
-.Parrafo {
-    font-size: 1.5rem;
-    color: black;
-    background-color: #039388;
-    padding: 8px;
-    border-radius: 10px;
-    border: 3px solid black;
-}
-
-.Parrafo-Nenas {
-    font-size: 2rem;
-    color: black;
-}
-
-.Parrafo-Nenes {
-    font-size: 2rem;
-    color: black;
-}
-
-.Parrafo-Bebes {
-    font-size: 2rem;
-    color: black;
-}
-
-.Parrafo-Accesorios {
-    font-size: 2rem;
-    color: black;
-}
-
-.parrafo-nenas1:hover {
-    background-color: pink;
-    transition: 0.3s;
-}
-
-.parrafo-nenes2:hover {
-    background-color: cornflowerblue;
-    transition: 0.3s;
-}
-
-.parrafo-bebes3:hover {
-    background-color: aliceblue;
-    transition: 0.3s;
-}
-
-header {
+  .Seccion {
     display: flex;
-    background-color: #00aaa3;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li a.active,
-li a:hover {
-    background: #039388;
-    transition: 0.5s;
-    border: 1px solid black;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-}
-
-nav {
-    background-color: #038e83;
-    height: 85px;
-    width: 100%;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 85px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: black;
-    font-size: 15px;
-    padding: 7px 13px;
-    border-radius: 10px;
-    text-transform: uppercase;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: black;
-    float: right;
-    line-height: 85px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-.Footer {
-    background-color: #038e83;
-    margin-top: 2rem;
-    border-top: 2px solid black;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-
-footer div {
-    justify-content: space-evenly;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.Parrafo-Footer {
-    font-size: 2rem;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5rem;
     flex-wrap: wrap;
-    border-top: 2px solid black;
+    padding: 0 1rem;
+  }
+
+  .Seccion-Inicio {
+    display: flow-root;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  footer div {
+    justify-content: space-around;
     width: 100%;
-    text-align: center;
-    color: black;
-}
-
-.Horarios {
-    font-size: 2rem;
     display: grid;
-    color: black;
-}
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-.Ubicacion {
-    font-size: 2rem;
-    display: grid;
-    color: black;
-    text-align: right;
-    padding: 10px;
-}
-
-.Redes {
-    display: flex;
-}
-
-.Redes1 {
+  .Redes {
     display: none;
-}
+  }
 
-.Facebook, .Instagram, .Whatsapp {
-    width: 4rem;
-}
-
-.encabezado {
+  .Redes1 {
     display: flex;
-    justify-content: center;
+  }
+
+  .Horarios {
+    font-size: 2rem;
     text-align: center;
-    background-color: #00aaa3;
-}
+    display: grid;
+  }
 
-.encabezado .Menu__list {
-    float: right;
-    margin-right: 20px;
-}
-
-.encabezado .Menu__list__item {
-    color: black;
-    font-size: 15px;
-    padding: 7px 13px;
-    border-radius: 10px;
-    text-transform: uppercase;
-}
-
-section {
+  .Mapa {
     display: flex;
-    justify-content: center;
-    text-align: center;
-}
+    margin-left: 20px;
+  }
 
-img {
-    width: 100%;
+  .Ubicacion {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .Info-Nosotros {
+    font-size: 3rem;
+    flex-wrap: wrap;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .container {
+    font-size: 20px;
     display: flex;
+  }
+
 }
 
-.enlace {
-    position: absolute;
-    padding: 10px 60px;
-    display: flex;
-}
-
-.logo {
-    width: 70px;
-}
-
-.Categorias-Titulo, .Nenas-Titulo, .Nenes-Titulo, .Bebes-Titulo, 
-.Accesorios-Titulo, .Verano-Titulo, .UltimosTalles-Titulo, .Nosotros-Titulo {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 5rem;
-    color: black;
-}
-
-
-
-.container {
-    font-size: 30px;
-    text-align: center;
+/* MOBILE */
+@media (max-width: 880px) {
+  .checkbtn {
     display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #038e83;
+    top: 85px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  li a:hover, li a.active {
+    background: #00aaa3;
     color: black;
-}
+  }
 
-.Main2 {
+  #check:checked~ul {
+    left: 0;
+  }
+
+  footer div {
+    justify-content: space-around;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .Articulos-ultimostalles {
+    display: none;
+  }
+
+  .Link-ultimostalles {
     display: flex;
-    margin: 20px;
-}
+  }
 
-/* ESCRITORIO */
-@media (max-width: 2200px) {
-    .Articulos-ultimostalles {
-      display: none;
-    }
+  .Seccion {
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
   }
-  /* TABLET */
-  @media (max-width: 1120px) {
-    .enlace {
-      padding-left: 20px;
-    }
-    nav ul li a {
-      font-size: 16px;
-    }
-    .Articulo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: clamp(300px, 30%, 400px);
-    }
-    .Seccion {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      max-width: 700px;
-      margin: 0 auto;
-      margin-top: 5rem;
-      flex-wrap: wrap;
-      padding: 0 1rem;
-    }
-    .Seccion-Inicio {
-      display: flow-root;
-      justify-content: center;
-      gap: 1.5rem;
-      max-width: 700px;
-      margin: 0 auto;
-      margin-top: 5rem;
-      flex-wrap: wrap;
-      padding: 0 1rem;
-    }
-    footer div {
-      justify-content: space-around;
-      width: 100%;
-      display: grid;
-      align-items: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    .Redes {
-      display: none;
-    }
-    .Redes1 {
-      display: flex;
-    }
-    .Horarios {
-      font-size: 2rem;
-      text-align: center;
-      display: grid;
-    }
-    .Mapa {
-      display: flex;
-      margin-left: 20px;
-    }
-    .Ubicacion {
-      font-size: 2rem;
-      text-align: center;
-    }
-    .Info-Nosotros {
-      font-size: 3rem;
-      flex-wrap: wrap;
-      margin: 4px;
-      padding: 5px;
-      text-align: center;
-    }
-    .container {
-      font-size: 20px;
-      display: flex;
-    }
+
+  .Redes {
+    display: none;
   }
-  /* MOBILE */
-  @media (max-width: 880px) {
-    .checkbtn {
-      display: block;
-    }
-    ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #038e83;
-      top: 85px;
-      left: -100%;
-      text-align: center;
-      transition: all 0.5s;
-      z-index: 1;
-    }
-    nav ul li {
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a {
-      font-size: 20px;
-    }
-    li a:hover, li a.active {
-      background: none;
-      color: red;
-    }
-    #check:checked ~ ul {
-      left: 0;
-    }
-    footer div {
-      justify-content: space-around;
-      width: 100%;
-      display: grid;
-      align-items: center;
-      margin-top: 0.1rem;
-      margin-bottom: 1rem;
-    }
-    .Articulos-ultimostalles {
-      display: none;
-    }
-    .Link-ultimostalles {
-      display: flex;
-    }
-    .Seccion {
-      justify-content: center;
-      gap: 1.5rem;
-      max-width: 700px;
-      margin: 0 auto;
-      margin-top: 5rem;
-      flex-wrap: wrap;
-      padding: 0 1rem;
-    }
-    .Redes {
-      display: none;
-    }
-    .Redes1 {
-      display: flex;
-    }
-    .Horarios {
-      display: none;
-    }
-    .Horario {
-      display: grid;
-    }
-    .Mapa {
-      display: flex;
-      margin-left: 30px;
-    }
-    .Ubicacion {
-      display: none;
-    }
-    .Ubicaciones {
-      display: grid;
-    }
-    .Info-Nosotros {
-      font-size: 3rem;
-      flex-wrap: wrap;
-      margin: 4px;
-      padding: 5px;
-      text-align: center;
-    }
-    .Mapa1 {
-      display: none;
-    }
-    .container {
-      font-size: 18px;
-    }
+
+  .Redes1 {
+    display: flex;
   }
+
+  .Horarios {
+    display: none;
+  }
+
+  .Horario {
+    display: grid;
+  }
+
+  .Mapa {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .Ubicacion {
+    display: none;
+  }
+
+  .Ubicaciones {
+    display: grid;
+  }
+
+  .Info-Nosotros {
+    font-size: 3rem;
+    flex-wrap: wrap;
+    margin: 4px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .Mapa1 {
+    display: none;
+  }
+
+  .container {
+    font-size: 18px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
