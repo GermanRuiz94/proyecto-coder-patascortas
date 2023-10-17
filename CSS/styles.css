@@ -1,12 +1,16 @@
 * {
   padding: 0px;
   margin: 0%;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
+
+ul {
+  list-style-type: none; }
+
+img {
+  width: 100%; }
 
 body {
   margin: 0;
@@ -18,126 +22,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: #00aaa3;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.carousel {
-  width: 100%;
-}
-
-.Seccion {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  max-width: 1500px;
-  margin: 0 auto;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-  padding: 0 1rem;
-}
-
-.Articulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: clamp(300px, 30%, 400px);
-}
-
-.Parrafo {
-  font-size: 1.5rem;
-  color: black;
-  background-color: #039388;
-  padding: 8px;
-  border-radius: 10px;
-  border: 3px solid black;
-}
-
-.Parrafo-Nenas, .Parrafo-Nenes, .Parrafo-Bebes, .Parrafo-Accesorios {
-  font-size: 2rem;
-  color: black;
-}
-
-.parrafo-nenas1:hover {
-  background-color: pink;
-  transition: 0.3s;
-}
-
-.parrafo-nenes2:hover {
-  background-color: cornflowerblue;
-  transition: 0.3s;
-}
-
-.parrafo-bebes3:hover {
-  background-color: aliceblue;
-  transition: 0.3s;
-}
-
-header {
-  display: flex;
-  background-color: #00aaa3;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li a.active, li a:hover {
-  background: #00aaa3;
-  transition: 0.5s;
-  border: 1px solid black;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-}
-
-nav {
-  background-color: #038e83;
-  height: 85px;
-  width: 100%;
-}
-
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 85px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: black;
-  font-size: 15px;
-  padding: 7px 13px;
-  border-radius: 10px;
-  text-transform: uppercase;
-}
-
-nav ul li a:hover {
-  color: red;
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: black;
-  float: right;
-  line-height: 85px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
+  -webkit-tap-highlight-color: transparent; }
 
 .Footer {
   background-color: #038e83;
@@ -147,8 +32,7 @@ nav ul li a:hover {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-}
+  padding: 1rem; }
 
 footer div {
   justify-content: space-evenly;
@@ -156,8 +40,7 @@ footer div {
   display: flex;
   align-items: center;
   margin-top: 3rem;
-  margin-bottom: 3rem;
-}
+  margin-bottom: 3rem; }
 
 .Parrafo-Footer {
   font-size: 2rem;
@@ -166,114 +49,213 @@ footer div {
   border-top: 2px solid black;
   width: 100%;
   text-align: center;
-  color: black;
-}
+  color: black; }
 
 .Horarios {
   font-size: 2rem;
   display: grid;
-  color: black;
-}
+  color: black; }
 
 .Ubicacion {
   font-size: 2rem;
   display: grid;
   color: black;
   text-align: right;
-  padding: 10px;
-}
+  padding: 10px; }
 
 .Redes {
-  display: flex;
-}
+  display: flex; }
 
 .Redes1 {
-  display: none;
-}
+  display: none; }
 
 .Facebook, .Instagram, .Whatsapp {
-  width: 4rem;
-}
+  width: 4rem; }
+
+nav {
+  background-color: #038e83;
+  height: 85px;
+  width: 100%; }
+
+nav ul {
+  float: right;
+  margin-right: 20px; }
+
+nav ul li {
+  display: inline-block;
+  line-height: 85px;
+  margin: 0 5px; }
+
+nav ul li a {
+  color: black;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  text-transform: uppercase; }
+
+.Parrafo {
+  font-size: 1.5rem;
+  color: black;
+  background-color: #039388;
+  padding: 8px;
+  border-radius: 10px;
+  border: 3px solid black; }
+
+.Parrafo:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
+
+.Parrafo-Nenas {
+  font-size: 2rem;
+  color: black; }
+
+.Parrafo-Nenes {
+  font-size: 2rem;
+  color: black; }
+
+.Parrafo-Bebes {
+  font-size: 2rem;
+  color: black; }
+
+.Parrafo-Accesorios {
+  font-size: 2rem;
+  color: black; }
+
+.parrafo-nenas1:hover {
+  background-color: pink;
+  transition: 0.3s; }
+
+.parrafo-nenes2:hover {
+  background-color: cornflowerblue;
+  transition: 0.3s; }
+
+.parrafo-bebes3:hover {
+  background-color: aliceblue;
+  transition: 0.3s; }
+
+.carousel {
+  width: 100%; }
+
+.Categorias-Titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: black; }
+
+.Seccion {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding: 0 1rem; }
+
+.Articulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: clamp(300px, 30%, 400px); }
+
+header {
+  display: flex;
+  background-color: #00aaa3; }
+
+li a.active, li a:hover {
+  background: #00aaa3;
+  transition: 0.5s;
+  border: 1px solid black;
+  color: red; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem; }
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 85px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
 
 .encabezado {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #00aaa3;
-}
-
-.encabezado .Menu__list {
-  float: right;
-  margin-right: 20px;
-}
-
-.encabezado .Menu__list__item {
-  color: black;
-  font-size: 15px;
-  padding: 7px 13px;
-  border-radius: 10px;
-  text-transform: uppercase;
-}
+  background-color: #00aaa3; }
+  .encabezado .Menu__list {
+    float: right;
+    margin-right: 20px; }
+    .encabezado .Menu__list__item {
+      color: black;
+      font-size: 15px;
+      padding: 7px 13px;
+      border-radius: 10px;
+      text-transform: uppercase; }
 
 section {
   display: flex;
   justify-content: center;
-  text-align: center;
-}
+  text-align: center; }
 
 img {
-  width: 100%;
-  display: flex;
-}
+  width: 100%; }
 
 .enlace {
   position: absolute;
   padding: 10px 60px;
-  display: flex;
-}
+  display: flex; }
 
 .logo {
-  width: 70px;
-}
+  width: 70px; }
 
-.Categorias-Titulo, .Nenas-Titulo, .Nenes-Titulo, .Bebes-Titulo, 
+.Categorias-Titulo, .Nenas-Titulo, .Nenes-Titulo, .Bebes-Titulo,
 .Accesorios-Titulo, .Verano-Titulo, .UltimosTalles-Titulo, .Nosotros-Titulo {
   text-align: center;
   margin-top: 3rem;
   font-size: 5rem;
   color: black;
-}
+  animation: tracking-in-expand 1s .7s both; }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -.5em;
+    opacity: 0; }
+  40% {
+    opacity: .6; }
+  100% {
+    opacity: 1; } }
 
 .container {
   font-size: 30px;
   text-align: center;
   display: block;
-  color: black;
-}
+  color: black; }
 
 .Main2 {
   max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 1rem;
-}
+  padding: 0 1rem; }
 
-/* ESCRITORIO */
 @media (max-width: 2200px) {
   .Articulos-ultimostalles {
-    display: none;
-  }
-}
+    display: none; } }
 
 /* TABLET */
 @media (max-width: 1120px) {
   .enlace {
-    padding-left: 20px;
-  }
-
+    padding-left: 20px; }
   nav ul li a {
-    font-size: 16px;
-  }
-
+    font-size: 16px; }
   .Articulo {
     display: flex;
     flex-direction: column;
@@ -281,9 +263,7 @@ img {
     gap: 1.5rem;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: clamp(300px, 30%, 400px);
-  }
-
+    flex-basis: clamp(300px, 30%, 400px); }
   .Seccion {
     display: flex;
     justify-content: center;
@@ -292,9 +272,7 @@ img {
     margin: 0 auto;
     margin-top: 5rem;
     flex-wrap: wrap;
-    padding: 0 1rem;
-  }
-
+    padding: 0 1rem; }
   .Seccion-Inicio {
     display: flow-root;
     justify-content: center;
@@ -303,63 +281,42 @@ img {
     margin: 0 auto;
     margin-top: 5rem;
     flex-wrap: wrap;
-    padding: 0 1rem;
-  }
-
+    padding: 0 1rem; }
   footer div {
     justify-content: space-around;
     width: 100%;
     display: grid;
     align-items: center;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
+    margin-bottom: 1rem; }
   .Redes {
-    display: none;
-  }
-
+    display: none; }
   .Redes1 {
-    display: flex;
-  }
-
+    display: flex; }
   .Horarios {
     font-size: 2rem;
     text-align: center;
-    display: grid;
-  }
-
+    display: grid; }
   .Mapa {
     display: flex;
-    margin-left: 20px;
-  }
-
+    margin-left: auto; }
   .Ubicacion {
     font-size: 2rem;
-    text-align: center;
-  }
-
+    text-align: center; }
   .Info-Nosotros {
     font-size: 3rem;
     flex-wrap: wrap;
     margin: 4px;
     padding: 5px;
-    text-align: center;
-  }
-
+    text-align: center; }
   .container {
     font-size: 20px;
-    display: flex;
-  }
-
-}
+    display: flex; } }
 
 /* MOBILE */
-@media (max-width: 880px) {
+@media (max-width: 815px) {
   .checkbtn {
-    display: block;
-  }
-
+    display: block; }
   ul {
     position: fixed;
     width: 100%;
@@ -369,45 +326,30 @@ img {
     left: -100%;
     text-align: center;
     transition: all 0.5s;
-    z-index: 1;
-  }
-
+    z-index: 1; }
   nav ul li {
     display: block;
     margin: 50px 0;
-    line-height: 30px;
-  }
-
+    line-height: 30px; }
   nav ul li a {
-    font-size: 20px;
-  }
-
+    font-size: 20px; }
   li a:hover, li a.active {
-    background: #00aaa3;
-    color: black;
-  }
-
-  #check:checked~ul {
-    left: 0;
-  }
-
+    background: none;
+    color: red;
+    background: #00aaa3; }
+  #check:checked ~ ul {
+    left: 0; }
   footer div {
     justify-content: space-around;
     width: 100%;
     display: grid;
     align-items: center;
     margin-top: 0.1rem;
-    margin-bottom: 1rem;
-  }
-
+    margin-bottom: 1rem; }
   .Articulos-ultimostalles {
-    display: none;
-  }
-
+    display: none; }
   .Link-ultimostalles {
-    display: flex;
-  }
-
+    display: flex; }
   .Seccion {
     justify-content: center;
     gap: 1.5rem;
@@ -415,53 +357,28 @@ img {
     margin: 0 auto;
     margin-top: 5rem;
     flex-wrap: wrap;
-    padding: 0 1rem;
-  }
-
+    padding: 0 1rem; }
   .Redes {
-    display: none;
-  }
-
+    display: none; }
   .Redes1 {
-    display: flex;
-  }
-
+    display: flex; }
   .Horarios {
-    display: none;
-  }
-
+    display: none; }
   .Horario {
-    display: grid;
-  }
-
+    display: grid; }
   .Mapa {
-    display: flex;
-    margin-left: 30px;
-  }
-
+    display: flex; }
   .Ubicacion {
-    display: none;
-  }
-
+    display: none; }
   .Ubicaciones {
-    display: grid;
-  }
-
+    display: grid; }
   .Info-Nosotros {
     font-size: 3rem;
     flex-wrap: wrap;
     margin: 4px;
     padding: 5px;
-    text-align: center;
-  }
-
+    text-align: center; }
   .Mapa1 {
-    display: none;
-  }
-
+    display: none; }
   .container {
-    font-size: 18px;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+    font-size: 18px; } }

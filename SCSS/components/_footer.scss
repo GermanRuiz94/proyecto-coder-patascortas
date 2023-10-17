@@ -1,0 +1,55 @@
+.Footer {
+    background-color: #038e83;
+    margin-top: 2rem;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer div {
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.Parrafo-Footer {
+    font-size: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    border-top: 2px solid black;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.Horarios {
+    font-size: 2rem;
+    display: grid;
+    color: black;
+}
+
+.Ubicacion {
+    font-size: 2rem;
+    display: grid;
+    color: black;
+    text-align: right;
+    padding: 10px;
+}
+
+.Redes {
+    display: flex;
+}
+
+.Redes1 {
+    display: none;
+}
+
+.Facebook, .Instagram, .Whatsapp {
+    width: 4rem;
+}

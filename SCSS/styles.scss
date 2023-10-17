@@ -2,4 +2,12 @@
 @import "./utilities/mixins";
 @import "./utilities/maps";
 
-@import "./views/home"
+@import "./global/reset";
+
+@import "./components/footer";
+@import "./components/nav";
+@import "./components/parrafos";
+
+
+
+@import "./views/home";

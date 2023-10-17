@@ -1,26 +1,3 @@
-* {
-    padding: 0px;
-    margin: 0%;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    margin: 0;
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    color: #039388;
-    text-align: var(--bs-body-text-align);
-    background-color: #00aaa3;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-}
-
 .carousel {
     width: 100%;
 }
@@ -53,95 +30,22 @@ body {
     flex-basis: clamp(300px, 30%, 400px);
 }
 
-.Parrafo {
-    font-size: 1.5rem;
-    color: black;
-    background-color: #039388;
-    padding: 8px;
-    border-radius: 10px;
-    border: 3px solid black;
-}
-
-.Parrafo-Nenas {
-    font-size: 2rem;
-    color: black;
-}
-
-.Parrafo-Nenes {
-    font-size: 2rem;
-    color: black;
-}
-
-.Parrafo-Bebes {
-    font-size: 2rem;
-    color: black;
-}
-
-.Parrafo-Accesorios {
-    font-size: 2rem;
-    color: black;
-}
-
-.parrafo-nenas1:hover {
-    background-color: pink;
-    transition: 0.3s;
-}
-
-.parrafo-nenes2:hover {
-    background-color: cornflowerblue;
-    transition: 0.3s;
-}
-
-.parrafo-bebes3:hover {
-    background-color: aliceblue;
-    transition: 0.3s;
-}
-
 header {
     display: flex;
     background-color: $color-principal;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li a.active,
-li a:hover {
-    background: #039388;
+li a.active, li a:hover {
+    background: #00aaa3;
     transition: 0.5s;
     border: 1px solid black;
+    color: red;
 }
 
 a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
-}
-
-nav {
-    background-color: #038e83;
-    height: 85px;
-    width: 100%;
-}
-
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 85px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: black;
-    font-size: 15px;
-    padding: 7px 13px;
-    border-radius: 10px;
-    text-transform: uppercase;
 }
 
 .checkbtn {
@@ -156,62 +60,6 @@ nav ul li a {
 
 #check {
     display: none;
-}
-
-.Footer {
-    background-color: #038e83;
-    margin-top: 2rem;
-    border-top: 2px solid black;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-
-footer div {
-    justify-content: space-evenly;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.Parrafo-Footer {
-    font-size: 2rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-    border-top: 2px solid black;
-    width: 100%;
-    text-align: center;
-    color: black;
-}
-
-.Horarios {
-    font-size: 2rem;
-    display: grid;
-    color: black;
-}
-
-.Ubicacion {
-    font-size: 2rem;
-    display: grid;
-    color: black;
-    text-align: right;
-    padding: 10px;
-}
-
-.Redes {
-    display: flex;
-}
-
-.Redes1 {
-    display: none;
-}
-
-.Facebook, .Instagram, .Whatsapp {
-    width: 4rem;
 }
 
 //header {
@@ -263,3 +111,210 @@ section {
 img {
     @include sizes (100%, null)
 }
+
+.enlace {
+    position: absolute;
+    padding: 10px 60px;
+    display: flex;
+}
+
+.logo {
+    width: 70px;
+}
+
+.Categorias-Titulo, .Nenas-Titulo, .Nenes-Titulo, .Bebes-Titulo, 
+.Accesorios-Titulo, .Verano-Titulo, .UltimosTalles-Titulo, .Nosotros-Titulo {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 5rem;
+    color: black;
+    animation:tracking-in-expand 1s .7s both
+}
+
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+.container {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    color: black;
+}
+
+.Main2 {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+@media (max-width: 2200px) {
+    .Articulos-ultimostalles {
+      display: none;
+    }
+  }
+  /* TABLET */
+  @media (max-width: 1120px) {
+    .enlace {
+      padding-left: 20px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+    .Articulo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: clamp(300px, 30%, 400px);
+    }
+    .Seccion {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 5rem;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+    .Seccion-Inicio {
+      display: flow-root;
+      justify-content: center;
+      gap: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 5rem;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+    footer div {
+      justify-content: space-around;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .Redes {
+      display: none;
+    }
+    .Redes1 {
+      display: flex;
+    }
+    .Horarios {
+      font-size: 2rem;
+      text-align: center;
+      display: grid;
+    }
+    .Mapa {
+      display: flex;
+      margin-left: auto;
+    }
+    .Ubicacion {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .Info-Nosotros {
+      font-size: 3rem;
+      flex-wrap: wrap;
+      margin: 4px;
+      padding: 5px;
+      text-align: center;
+    }
+    .container {
+      font-size: 20px;
+      display: flex;
+    }
+  }
+  /* MOBILE */
+  @media (max-width: 815px) {
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #038e83;
+      top: 85px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 1;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    li a:hover, li a.active {
+      background: none;
+      color: red;
+      background: #00aaa3;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+    footer div {
+      justify-content: space-around;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      margin-top: 0.1rem;
+      margin-bottom: 1rem;
+    }
+    .Articulos-ultimostalles {
+      display: none;
+    }
+    .Link-ultimostalles {
+      display: flex;
+    }
+    .Seccion {
+      justify-content: center;
+      gap: 1.5rem;
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 5rem;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+    .Redes {
+      display: none;
+    }
+    .Redes1 {
+      display: flex;
+    }
+    .Horarios {
+      display: none;
+    }
+    .Horario {
+      display: grid;
+    }
+    .Mapa {
+      display: flex;
+    }
+    .Ubicacion {
+      display: none;
+    }
+    .Ubicaciones {
+      display: grid;
+    }
+    .Info-Nosotros {
+      font-size: 3rem;
+      flex-wrap: wrap;
+      margin: 4px;
+      padding: 5px;
+      text-align: center;
+    }
+    .Mapa1 {
+      display: none;
+    }
+    .container {
+      font-size: 18px;
+    }
+  }
+
