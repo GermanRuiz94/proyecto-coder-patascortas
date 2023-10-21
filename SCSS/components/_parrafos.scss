@@ -45,3 +45,12 @@
     background-color: aliceblue;
     transition: 0.3s;
 }
+
+.Categorias-Titulo, .Nenas-Titulo, .Nenes-Titulo, .Bebes-Titulo, .Accesorios-Titulo, 
+.Verano-Titulo, .UltimosTalles-Titulo, .Nosotros-Titulo {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: black;
+  animation: tracking-in-expand 1s .7s both
+}
