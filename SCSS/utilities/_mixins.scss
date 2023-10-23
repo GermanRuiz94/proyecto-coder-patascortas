@@ -1,11 +1,11 @@
 @mixin flex-estatico {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    display: $Display-Flex;
+    justify-content: $Center;
+    text-align: $Center;
 }
 
 @mixin flex ($flex-direction, $justify, $align, $gap) {
-    display: flex;
+    display: $Display-Flex;
     flex-direction: $flex-direction;
     justify-content: $justify;
     text-align: $align;
@@ -16,3 +16,4 @@
     width: $width;
     height: $height;
 }
+

@@ -1,0 +1,39 @@
+.Parrafo-Extend {
+    font-size: 2rem;
+    color: black;
+}
+
+.Parrafo-Nenas {
+    @extend.Parrafo-Extend;
+}
+
+.Parrafo-Nenes {
+    @extend .Parrafo-Extend;
+}
+
+.Parrafo-Bebes {
+    @extend .Parrafo-Extend;
+}
+
+.Parrafo-Accesorios {
+    @extend .Parrafo-Extend;
+}
+
+.Parrafo:hover {
+    transition: 0.3s;
+}
+
+.parrafo-nenas1:hover {
+    background-color: pink;
+    @extend .Parrafo:hover
+}
+
+.parrafo-nenes2:hover {
+    background-color: cornflowerblue;
+    @extend .Parrafo:hover
+}
+
+.parrafo-bebes3:hover {
+    background-color: aliceblue;
+    @extend .Parrafo:hover
+}

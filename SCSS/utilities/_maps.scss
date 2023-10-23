@@ -1,0 +1,12 @@
+$map-colors: (
+    Primario: #00aaa3,
+    Secundario: #038e83,
+    Negro: black,
+    Rojo: red,
+);
+
+@each $color, $valor in $map-colors {
+    .color-#{$color} {
+        color: $valor;
+    }
+}

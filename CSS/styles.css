@@ -1,3 +1,31 @@
+.Parrafo-Extend, .Parrafo-Nenas, .Parrafo-Nenes, .Parrafo-Bebes, .Parrafo-Accesorios {
+  font-size: 2rem;
+  color: black; }
+
+.Parrafo:hover, .parrafo-nenas1:hover, .parrafo-nenes2:hover, .parrafo-bebes3:hover {
+  transition: 0.3s; }
+
+.parrafo-nenas1:hover {
+  background-color: pink; }
+
+.parrafo-nenes2:hover {
+  background-color: cornflowerblue; }
+
+.parrafo-bebes3:hover {
+  background-color: aliceblue; }
+
+.color-Primario {
+  color: #00aaa3; }
+
+.color-Secundario {
+  color: #038e83; }
+
+.color-Negro {
+  color: black; }
+
+.color-Rojo {
+  color: red; }
+
 * {
   padding: 0px;
   margin: 0%;
@@ -101,36 +129,8 @@ nav ul li a {
   border-radius: 10px;
   border: 3px solid black; }
 
-.Parrafo:hover {
+.Parrafo:hover, .parrafo-nenas1:hover, .parrafo-nenes2:hover, .parrafo-bebes3:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; }
-
-.Parrafo-Nenas {
-  font-size: 2rem;
-  color: black; }
-
-.Parrafo-Nenes {
-  font-size: 2rem;
-  color: black; }
-
-.Parrafo-Bebes {
-  font-size: 2rem;
-  color: black; }
-
-.Parrafo-Accesorios {
-  font-size: 2rem;
-  color: black; }
-
-.parrafo-nenas1:hover {
-  background-color: pink;
-  transition: 0.3s; }
-
-.parrafo-nenes2:hover {
-  background-color: cornflowerblue;
-  transition: 0.3s; }
-
-.parrafo-bebes3:hover {
-  background-color: aliceblue;
-  transition: 0.3s; }
 
 .Categorias-Titulo, .Nenas-Titulo, .Nenes-Titulo, .Bebes-Titulo, .Accesorios-Titulo,
 .Verano-Titulo, .UltimosTalles-Titulo, .Nosotros-Titulo {
@@ -223,10 +223,6 @@ img {
 .Tienda {
   font-size: 2rem; }
 
-.Tienda1 {
-  font-size: 2rem;
-  position: relative; }
-
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -.5em;
@@ -318,10 +314,7 @@ img {
     margin: 2rem auto;
     padding: 0 1rem; }
   .Tienda {
-    font-size: 1.7rem; }
-  .Tienda1 {
-    font-size: 1.7rem;
-    position: relative; } }
+    font-size: 1.7rem; } }
 
 /* MOBILE */
 @media (max-width: 815px) {
@@ -363,7 +356,7 @@ img {
   .Seccion {
     justify-content: center;
     gap: 1.5rem;
-    max-width: 700px;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 5rem;
     flex-wrap: wrap;

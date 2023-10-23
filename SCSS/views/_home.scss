@@ -1,11 +1,11 @@
 .carousel {
-  width: 100%;
+  width: $Width;
 }
 
 .Seccion {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  display: $Display-Flex;
+  justify-content: $Center;
+  gap: $Gap;
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 2rem;
@@ -14,57 +14,57 @@
 }
 
 .Articulo {
-  display: flex;
+  display: $Display-Flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  align-items: $Center;
+  gap: $Gap;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: clamp(300px, 30%, 400px);
 }
 
 header {
-  display: flex;
-  background-color: $color-principal;
+  display: $Display-Flex;
+  background-color: map-get($map-colors, Primario );
 }
 
 li a.active, li a:hover {
-  background: #00aaa3;
+  background: $color-principal;
   transition: 0.5s;
-  border: 1px solid black;
-  color: red;
+  border: 1px solid map-get($map-colors, Negro);
+  color: $color-Rojo;
 }
 
 a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
+  text-decoration: $Display-None;
+  color: map-get($map-colors, Negro);
+  font-size: $Gap;
 }
 
 .checkbtn {
   font-size: 30px;
-  color: black;
+  color: map-get($map-colors, Negro);
   float: right;
   line-height: 85px;
   margin-right: 40px;
   cursor: pointer;
-  display: none;
+  display: $Display-None;
 }
 
 #check {
-  display: none;
+  display: $Display-None;
 }
 
 .encabezado {
   @include flex-estatico;
-  background-color: $color-principal;
+  background-color: map-get($map-colors, Primario );
 
   .Menu__list {
     float: right;
     margin-right: 20px;
 
     &__item {
-      color: black;
+      color: map-get($map-colors, Negro);
       font-size: 15px;
       padding: 7px 13px;
       border-radius: 10px;
@@ -74,17 +74,17 @@ a {
 }
 
 section {
-  @include flex (null, center, center, null);
+  @include flex (null, $Center, $Center, null);
 }
 
 img {
-  @include sizes (100%, null)
+  @include sizes ($Width, null)
 }
 
 .enlace {
   position: absolute;
   padding: 10px 60px;
-  display: flex;
+  display: $Display-Flex;
 }
 
 .logo {
@@ -93,11 +93,6 @@ img {
 
 .Tienda {
   font-size: 2rem;
-}
-
-.Tienda1 {
-  font-size: 2rem;
-  position: relative;
 }
 
 @keyframes tracking-in-expand {
@@ -117,9 +112,9 @@ img {
 
 .container {
   font-size: 30px;
-  text-align: center;
+  text-align: $Center;
   display: block;
-  color: black;
+  color: map-get($map-colors, Negro);
 }
 
 .Main2 {
@@ -130,7 +125,7 @@ img {
 
 @media (max-width: 2200px) {
   .Articulos-ultimostalles {
-    display: none;
+    display: $Display-None;
   }
 }
 
@@ -145,19 +140,19 @@ img {
   }
 
   .Articulo {
-    display: flex;
+    display: $Display-Flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    align-items: $Center;
+    gap: $Gap;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: clamp(300px, 30%, 400px);
   }
 
   .Seccion {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
+    display: $Display-Flex;
+    justify-content: $Center;
+    gap: $Gap;
     max-width: 700px;
     margin: 0 auto;
     margin-top: 5rem;
@@ -167,8 +162,8 @@ img {
 
   .Seccion-Inicio {
     display: flow-root;
-    justify-content: center;
-    gap: 1.5rem;
+    justify-content: $Center;
+    gap: $Gap;
     max-width: 700px;
     margin: 0 auto;
     margin-top: 5rem;
@@ -178,35 +173,35 @@ img {
 
   footer div {
     justify-content: space-around;
-    width: 100%;
-    display: grid;
-    align-items: center;
+    width: $Width;
+    display: $Display-Grid;
+    align-items: $Center;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
   .Redes {
-    display: none;
+    display: $Display-None;
   }
 
   .Redes1 {
-    display: flex;
+    display: $Display-Flex;
   }
 
   .Horarios {
     font-size: 2rem;
-    text-align: center;
-    display: grid;
+    text-align: $Center;
+    display: $Display-Grid;
   }
 
   .Mapa {
-    display: flex;
+    display: $Display-Flex;
     margin: auto;
   }
 
   .Ubicacion {
     font-size: 2rem;
-    text-align: center;
+    text-align: $Center;
   }
 
   .Info-Nosotros {
@@ -214,12 +209,12 @@ img {
     flex-wrap: wrap;
     margin: 4px;
     padding: 5px;
-    text-align: center;
+    text-align: $Center;
   }
 
   .container {
     font-size: 20px;
-    display: flex;
+    display: $Display-Flex;
   }
 
   .Main2 {
@@ -229,12 +224,7 @@ img {
   }
 
   .Tienda {
-    font-size: 1.7rem;
-  }
-
-  .Tienda1 {
-    font-size: 1.7rem;
-    position: relative;
+    font-size: $Fuente;
   }
 }
 
@@ -246,12 +236,12 @@ img {
 
   ul {
     position: fixed;
-    width: 100%;
+    width: $Width;
     height: 100vh;
-    background: #038e83;
+    background: map-get($map-colors, Secundario);
     top: 85px;
     left: -100%;
-    text-align: center;
+    text-align: $Center;
     transition: all 0.5s;
     z-index: 1;
   }
@@ -267,9 +257,9 @@ img {
   }
 
   li a:hover, li a.active {
-    background: none;
-    color: red;
-    background: #00aaa3;
+    background: $Display-None;
+    color: $color-Rojo;
+    background: map-get($map-colors, Primario );
   }
 
   #check:checked~ul {
@@ -278,25 +268,25 @@ img {
 
   footer div {
     justify-content: space-around;
-    width: 100%;
-    display: grid;
-    align-items: center;
+    width: $Width;
+    display: $Display-Grid;
+    align-items: $Center;
     margin-top: 0.1rem;
     margin-bottom: 1rem;
   }
 
   .Articulos-ultimostalles {
-    display: none;
+    display: $Display-None;
   }
 
   .Link-ultimostalles {
-    display: flex;
+    display: $Display-Flex;
   }
 
   .Seccion {
-    justify-content: center;
-    gap: 1.5rem;
-    max-width: 700px;
+    justify-content: $Center;
+    gap: $Gap;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 5rem;
     flex-wrap: wrap;
@@ -304,31 +294,31 @@ img {
   }
 
   .Redes {
-    display: none;
+    display: $Display-None;
   }
 
   .Redes1 {
-    display: flex;
+    display: $Display-Flex;
   }
 
   .Horarios {
-    display: none;
+    display: $Display-None;
   }
 
   .Horario {
-    display: grid;
+    display: $Display-Grid;
   }
 
   .Mapa {
-    display: flex;
+    display: $Display-Flex;
   }
 
   .Ubicacion {
-    display: none;
+    display: $Display-None;
   }
 
   .Ubicaciones {
-    display: grid;
+    display: $Display-Grid;
   }
 
   .Info-Nosotros {
@@ -336,7 +326,7 @@ img {
     flex-wrap: wrap;
     margin: 4px;
     padding: 5px;
-    text-align: center;
+    text-align: $Center;
   }
 
   .container {
